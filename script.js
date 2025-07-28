@@ -58,11 +58,11 @@ var pointsOrigin = [];
 var i;
 var dr = mobile ? 0.3 : 0.1;
 for (i = 0; i < Math.PI * 2; i += dr) 
-pointsOrigin.push(scaleAndTranslate(heartPosition(i), 210, 13, 0, 0));
+pointsOrigin.push(scaleAndTranslate(heartPosition(i), 80, 8, 0, 0));
 for (i = 0; i < Math.PI * 2; i += dr) 
-pointsOrigin.push(scaleAndTranslate(heartPosition(i), 150, 9, 0, 0));
+pointsOrigin.push(scaleAndTranslate(heartPosition(i), 30, 3, 0, 0));
 for (i = 0; i < Math.PI * 2; i += dr) 
-pointsOrigin.push(scaleAndTranslate(heartPosition(i), 90, 5, 0, 0));
+pointsOrigin.push(scaleAndTranslate(heartPosition(i), 30, 2, 0, 0));
 var heartPointsCount = pointsOrigin.length;
 
 var targetPoints = [];
