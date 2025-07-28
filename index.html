@@ -42,7 +42,7 @@
             background-position-y:-20px ;
             background-repeat: no-repeat;
             border-radius: 10px;
-            border-color: aqua;
+            
             border-style: none;
             
 
@@ -80,7 +80,20 @@
             0%, 100% { opacity: 1 }
             50% { opacity: 0.5 }
           }
-        
+        audio{
+            width: 40vw;
+            height: 5vh;
+            color:blueviolet;
+          }
+          audio::-webkit-media-controls-panel{
+            background-color: black;
+          }
+          audio::-webkit-media-controls-play-button{
+            background-color: lightblue;
+            border-radius: 50%;
+            width: 5%;
+            height: 90%;
+          }
        @media screen and (max-width: 500px) {
           body{
             margin:0;
@@ -149,16 +162,19 @@
           }
           audio{
             width: 40vw;
-            height: 10vh;
+            height: 5vh;
+            color:blueviolet;
           }
-
+          audio::webkit-media-controls-panel{
+            background-color: turquoise;
+          }
         }
     </style>
   </head>
   <body>  
         <canvas id="heart"></canvas>
         <div class="img1">
-          <audio controls autoplay loop src="Yedho.mp3"></audio>
+          <audio controls autoplay loop src="Yedho.mp3" type="audio/mp3"></audio>
         </div>
         <h1 class="typing">   Happy Birthday [Dear Senior]! </h1>
         
