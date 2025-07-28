@@ -1,27 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday!</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="gift.png.jpg">
-</head>
-<body>
-  <h1 class="typing">🎉 Happy Birthday, [Dear Senior]! 🎂</h1>
-  <p class="message">Have a nice day,give me my choclate,and <br> once again happy birthday ga💖</p>
+  <head>
+    <meta charset="utf-8">
+    <title>Heart Animation Effect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        canvas {
+        position: absolute;
+        left:0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,.2);
+        }
+        
+       
+        .fa-heart{                
+          color: red;      
+                      
+                
+                        
+                
+                        
+                
+        }
+       @media screen and (max-width: 500px) {
+          body{
+            margin:0;
+            padding:0;
+            background-color: black;
+          }
+          #heart{
+            height: 40vh;
+            width: 100vw;
+            margin-top: 71%;
+          }
+          .img1{
+            width: 100vw;
+            height: 40vh;
+            background-image: url(i1.jpeg);
+            background-size: 500px;
+            background-position-y:-20px ;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            border-color: aqua;
+            border-style: none;
+            background-color: yellow;
 
-  
-  <br>
-  <br>
-  <div id="car">
-      
-  </div>
-  
-    
-  </audio>
-  <canvas></canvas>
-  <audio controls autoplay src="Feel the bgm yetho maayam seigirai song whats app status.mp3"></audio>
-  <script src="script.js"></script>
-</body>
+            
+          }
+          .typing{
+            font-size: 20px;
+            color: black;
+            animation: blink 1s infinite;
+            position: relative;
+            
+            color: #fff;
+            word-spacing: 70px;
+            
+          } 
+          .typing1{
+            font-size: 20px;
+            color: black;
+            animation: blink 1s infinite;
+            position: relative;
+            
+            color: black;
+            margin-left: 20%;
+            
+          }
+          .message {
+            font-size: 20px;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            
+          }
+        
+          @keyframes blink {
+            0%, 100% { opacity: 1 }
+            50% { opacity: 0.5 }
+          }
+
+        }
+    </style>
+  </head>
+  <body>  
+        <canvas id="heart"></canvas>
+        <div class="img1">
+
+        </div>
+        <h1 class="typing">   Happy Birthday [Dear Senior]! </h1>
+        
+        <p class="message">Have a nice day,give me my choclate,and <br> once again happy birthday ga💖</p>
+        <!--JavaScript-->
+        <script src="script.js"></script>
+  </body>
 </html>
