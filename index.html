@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heart Animation Effect</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -24,6 +24,63 @@
                         
                 
         }
+         body{
+            margin:0;
+            padding:0;
+            background-color: black;
+          }
+          #heart{
+            height: 40vh;
+            width: 100vw;
+            margin-top: 71%;
+          }
+          .img1{
+            width: 100vw;
+            height: 40vh;
+            background-image: url(i1.jpeg);
+            background-size: 500px;
+            background-position-y:-20px ;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            border-color: aqua;
+            border-style: none;
+            background-color: yellow;
+
+            
+          }
+          .typing{
+            font-size: 20px;
+            color: black;
+            animation: blink 1s infinite;
+            position: relative;
+            
+            color: #fff;
+            word-spacing: 70px;
+            
+          } 
+          .typing1{
+            font-size: 20px;
+            color: black;
+            animation: blink 1s infinite;
+            position: relative;
+            
+            color: black;
+            margin-left: 20%;
+            
+          }
+          .message {
+            font-size: 20px;
+            position: relative;
+            text-align: center;
+            color: #fff;
+            
+          }
+        
+          @keyframes blink {
+            0%, 100% { opacity: 1 }
+            50% { opacity: 0.5 }
+          }
+        
        @media screen and (max-width: 500px) {
           body{
             margin:0;
